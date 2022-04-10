@@ -1,0 +1,43 @@
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(160, 160, 160, 0.3);
+    opacity: 1; /* Firefox */
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(211, 14, 14, 0.3);
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(160, 160, 160, 0.3);
+  }
+.btn {
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    padding: 10px 52px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    display:block;
+    width: 200px;
+  }
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+.btn:hover span {
+    padding-right: 25px;
+  }
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

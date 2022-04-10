@@ -1,0 +1,129 @@
+<br>
+<div class="container">
+    <button class="btn btn-primary" type="button" routerLink="/products"><span>Back</span></button>
+</div>
+<br>
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>eCommerce Product Detail</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+  </head>
+
+  <body>
+	
+	<div class="container">
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="assets/img/Razer/Razer Viper Ultimate Black/1.jpg" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="assets/img/Razer/Razer Viper Ultimate Black/2.webp" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="assets/img/Razer/Razer Viper Ultimate Black/3.webp" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="assets/img/Razer/Razer Viper Ultimate Black/4.webp" /></div>
+						  <div class="tab-pane" id="pic-5"><img src="assets/img/Razer/Razer Viper Ultimate Black/5.webp" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+						  <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="assets/img/Razer/Razer Viper Ultimate Black/2.webp" /></a></li>
+						  <li><a data-target="#pic-2" data-toggle="tab"><img src="assets/img/Razer/Razer Viper Ultimate Black/3.webp" /></a></li>
+						  <li><a data-target="#pic-3" data-toggle="tab"><img src="assets/img/Razer/Razer Viper Ultimate Black/4.webp" /></a></li>
+						  <li><a data-target="#pic-4" data-toggle="tab"><img src="assets/img/Razer/Razer Viper Ultimate Black/5.webp" /></a></li>
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">Razer Viper Ultimate (Black)</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star "></span>
+							</div>
+							<span class="review-no">121 reviews</span>
+						</div>
+						<p class="product-description">As a lightweight ambidextrous line up geared for maximum pace and performance, take a look at what differs between each Viper, so that you can find the right one that’s more your speed.</p>
+						<h4 class="price">current price: <span>{{product.price}}€</span></h4>
+						<p class="vote"><strong>97%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+
+						<h5 class="colors">colors:
+							<span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
+							<span class="color green"></span>
+							<span class="color blue"></span>
+						</h5>
+						<div class="action">
+							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
+							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
+
+<br>
+
+<h1 style="text-align:center">Product Specifications:</h1>
+<div class="container">
+	<table id="dataTable" class="table table-striped table-hover table-bordered">
+		<tbody>
+			<tr>
+				<td>ID</td>
+				<td>{{product.id}}</td>
+			</tr>
+			<tr>
+				<td>Name</td>
+				<td>{{product.name}}</td>
+			</tr>
+			<tr>
+				<td>Brand</td>
+				<td>{{product.brand}}</td>
+			</tr>
+			<tr>
+				<td>Weight</td>
+				<td>{{product.weight}}</td>
+			</tr>
+			<tr>
+				<td>Size</td>
+				<td>{{product.size}}</td>
+			</tr>
+			<tr>
+				<td>Dimensions</td>
+				<td>{{product.dimensions}}</td>
+			</tr>
+			<tr>
+				<td>Connectivity</td>
+				<td>{{product.connectivity}}</td>
+			</tr>
+			<tr>
+				<td>Description</td>
+				<td>{{product.description}}</td>
+			</tr>
+			<tr>
+				<td>Price</td>
+				<td>{{product.price}}</td>
+			</tr>
+			<tr>
+				<td>Image URL</td>
+				<td>{{product.url}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
