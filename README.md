@@ -1,6 +1,36 @@
 # Mousenest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3 and represents the frontend for [MouseNest](https://github.com/moisalucian/MouseNest---Backend)
+
+# Bookstore
+
+Java/Angular application build for an online Gaming Mice shop, created for learning purpose. Create Users, Manage Products, Login/Register - in work
+
+## Functionalities to be added
+
+- [ ] Login/Register
+- [ ] Unit tests
+- [ ] Cart
+
+## Testing Methods
+
+- [ ] Postman
+
+## Backend technologies and frameworks
+
+- JAVA
+- Spring
+
+## Frontend technologies and frameworks
+
+- HTML & CSS
+- Typescrypt
+- Angular
+
+## Database
+
+- MySQL
+- Hibernate
 
 ## Development server
 
@@ -25,3 +55,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Contribution
+
+Contributions are welcome, feel free to open pull requests or to contact me by e-mail.
